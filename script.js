@@ -1,8 +1,8 @@
-function escolherBUraco() {
+function escolherBuraco() {
     document.getElementById("story").textContent = 
         "Você entrou no buraco e encontrou uma salamandra dormindo. Você pode tentar roubar seu óculos ou sair correndo.";
     document.querySelector(".choices").innerHTML = `
-        <button onclick="roubarÒculos()">Roubar o óculos</button>
+        <button onclick="roubarÓculos()">Roubar o óculos</button>
         <button onclick="sairCorrendo()">Sair correndo</button>
     `;
 }
@@ -16,12 +16,12 @@ function escolherJardim() {
     `;
 }
 
-// Opções dentro da buraco
+// Opções dentro do buraco
 function roubarÓculos() {
     document.getElementById("story").textContent = 
         "Você tentou roubar o óculos, mas a salamandra despertou! O que você vai fazer?";
     document.querySelector(".choices").innerHTML = `
-        <button onclick="lutarComEla()">Lutar com a sqalamandra</button>
+        <button onclick="lutarComEla()">Lutar com a salamandra</button>
         <button onclick="SeEsconder()">Se esconder</button>
     `;
 }
@@ -35,10 +35,10 @@ function sairCorrendo() {
     `;
 }
 
-// Respostas dentro do jardim
+// Respostas dentro do buraco
 function lutarComSalamandra() {
     document.getElementById("story").textContent = 
-        "Você lutou bravamente, mas a salamandra que sabia kungfuu. Fim da história.";
+        "Você lutou bravamente, mas a salamandra sabia kungfuu. Fim da história.";
     document.querySelector(".choices").innerHTML = '<button onclick="reiniciar()">Recomeçar</button>';
 }
 
@@ -60,55 +60,55 @@ function irEmbora() {
     document.querySelector(".choices").innerHTML = '<button onclick="reiniciar()">Recomeçar</button>';
 }
 
-// Opções na floresta
-function escolherEsquerda() {
+// Opções no jardim
+function escolherNuvemFlutuante() {
     document.getElementById("story").textContent = 
-        "Você seguiu pela esquerda e encontrou um lago mágico. Há algo brilhando no fundo. O que você faz?";
+        "Você seguiu pela nuvem flutuante e viu uma sombra azul. tem um formato meio bizarro. O que você faz?";
     document.querySelector(".choices").innerHTML = `
-        <button onclick="mergulharNoLago()">Mergulhar no lago</button>
-        <button onclick="ignorarLago()">Ignorar o lago</button>
+        <button onclick="irInvestigar()">Investigar</button>
+        <button onclick="chamar()">chamar</button>
     `;
 }
 
-function escolherDireita() {
+function Escada() {
     document.getElementById("story").textContent = 
-        "Você seguiu pela direita e encontrou um castelo misterioso. A porta está entreaberta. O que você faz?";
+        "Você seguiu pela escada e se encontrou com um duende, ele disse para escolher um numero. ou vc irá morrer. qual numero vc escolhe 1 ou 2?";
     document.querySelector(".choices").innerHTML = `
-        <button onclick="entrarNoCastelo()">Entrar no castelo</button>
-        <button onclick="ficarFora()">Ficar do lado de fora</button>
+        <button onclick="número1()">1</button>
+        <button onclick="número2()">2</button>
     `;
 }
 
-// Respostas na floresta
-function mergulharNoLago() {
+// Respostas no jardim
+function investigar() {
     document.getElementById("story").textContent = 
-        "Você mergulhou no lago e encontrou um tesouro escondido. Fim da história.";
+        "Você encontrou uma sala cheia de cobras, mas ao entrar nela você foi picado. Fim da história.";
     document.querySelector(".choices").innerHTML = '<button onclick="reiniciar()">Recomeçar</button>';
 }
 
-function ignorarLago() {
+function Chamar() {
     document.getElementById("story").textContent = 
-        "Você ignorou o lago e seguiu seu caminho pela floresta. Fim da história.";
+        "Era um homem, ele veio até sua direção e disse que lhe deixaria rico. Fim da história.";
     document.querySelector(".choices").innerHTML = '<button onclick="reiniciar()">Recomeçar</button>';
 }
 
-function entrarNoCastelo() {
+function número1() {
     document.getElementById("story").textContent = 
-        "Você entrou no castelo e descobriu que ele estava assombrado! Fim da história.";
+        "ele disse que você escolheu errado e em seguida cravou uma adaga! Fim da história.";
     document.querySelector(".choices").innerHTML = '<button onclick="reiniciar()">Recomeçar</button>';
 }
 
-function ficarFora() {
+function número2() {
     document.getElementById("story").textContent = 
-        "Você decidiu ficar do lado de fora do castelo e explorar o jardim. Fim da história.";
+        "Você escolheub certo, ele lhe entregou um pote de moedas. Fim da história.";
     document.querySelector(".choices").innerHTML = '<button onclick="reiniciar()">Recomeçar</button>';
 }
 
 function reiniciar() {
     document.getElementById("story").textContent = 
-             "Você está em frente a uma caverna escura. O que você deseja fazer?";
+             "Você está em frente a um buraco escuro e um jardim. O que você deseja fazer?";
     document.querySelector(".choices").innerHTML = `
-        <button onclick="escolherCaverna()">Entrar na caverna</button>
-        <button onclick="escolherFloresta()">Ir para a floresta</button>
+        <button onclick="escolherBuraco()">Entrar no buraco</button>
+        <button onclick="escolherJardim()">Ir para o jardim</button>
     `;
 }
