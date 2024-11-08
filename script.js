@@ -1,4 +1,4 @@
-function escolherBuraco() {
+eufunction escolherBuraco() {
     document.getElementById("story").textContent = 
         "Você entrou no buraco e encontrou uma salamandra dormindo. Você pode tentar roubar seu óculos ou sair correndo.";
     document.querySelector(".choices").innerHTML = `
@@ -38,7 +38,7 @@ function sairCorrendo() {
 // Respostas dentro do buraco
 function lutarComSalamandra() {
     document.getElementById("story").textContent = 
-        "Você lutou bravamente, mas a salamandra sabia kungfuu. Fim da história.";
+        "Você lutou bravamente, mas a salamandra sabia kungfuu e te venceu. Fim da história.";
     document.querySelector(".choices").innerHTML = '<button onclick="reiniciar()">Recomeçar</button>';
 }
 
@@ -72,7 +72,7 @@ function escolherNuvemFlutuante() {
 
 function Escada() {
     document.getElementById("story").textContent = 
-        "Você seguiu pela escada e se encontrou com um duende, ele disse para escolher um numero. ou vc irá morrer. qual numero vc escolhe 1 ou 2?";
+        "Você seguiu pela escada e se encontrou com um duende, ele disse para escolher um número ou vc irá morrer. qual número vc escolhe 1 ou 2?";
     document.querySelector(".choices").innerHTML = `
         <button onclick="número1()">1</button>
         <button onclick="número2()">2</button>
@@ -94,13 +94,13 @@ function Chamar() {
 
 function número1() {
     document.getElementById("story").textContent = 
-        "ele disse que você escolheu errado e em seguida cravou uma adaga! Fim da história.";
+        "ele disse que você escolheu errado e em seguida cravou uma adaga no seu peito! Fim da história.";
     document.querySelector(".choices").innerHTML = '<button onclick="reiniciar()">Recomeçar</button>';
 }
 
 function número2() {
     document.getElementById("story").textContent = 
-        "Você escolheub certo, ele lhe entregou um pote de moedas. Fim da história.";
+        "Você escolheu certo, ele lhe entregou um pote de moedas. Fim da história.";
     document.querySelector(".choices").innerHTML = '<button onclick="reiniciar()">Recomeçar</button>';
 }
 
